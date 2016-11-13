@@ -63,7 +63,6 @@ import com.adafruit.bluefruit.le.connect.ble.BleManager;
 import com.adafruit.bluefruit.le.connect.ble.BleUtils;
 import com.adafruit.bluefruit.le.connect.ui.utils.DialogUtils;
 import com.adafruit.bluefruit.le.connect.ui.utils.ExpandableHeightExpandableListView;
-import com.adafruit.bluefruit.le.connect.ui.utils.MetricsUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -828,11 +827,13 @@ public class MainActivity extends AppCompatActivity implements BleManager.BleMan
 
     public void onClickDeviceConnect(int scannedDeviceIndex) {
         stopScanning();
-
+        Log.v(TAG, Integer.toString(scannedDeviceIndex));
         ArrayList<BluetoothDeviceData> filteredPeripherals = mPeripheralList.filteredPeripherals(false);
         if (scannedDeviceIndex < filteredPeripherals.size()) {
             mSelectedDeviceData = filteredPeripherals.get(scannedDeviceIndex);
+            //Log.v(TAG, filteredPeripherals.get(scannedDeviceIndex));
             BluetoothDevice device = mSelectedDeviceData.device;
+
 
             mBleManager.setBleListener(MainActivity.this);           // Force set listener (could be still checking for updates...)
 
@@ -1113,6 +1114,7 @@ public class MainActivity extends AppCompatActivity implements BleManager.BleMan
             if (mComponentToStartWhenConnected == BeaconActivity.class && mSelectedDeviceData != null) {
                 intent.putExtra("rssi", mSelectedDeviceData.rssi);
             }
+            Log.v(TAG,mSelectedDeviceData.device.getAddress());
             startActivityForResult(intent, kActivityRequestCode_ConnectedActivity);
         }
     }
@@ -1639,8 +1641,8 @@ public class MainActivity extends AppCompatActivity implements BleManager.BleMan
             }
 
             Spanned result;
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-                result = Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY);
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                result = Html.fromHtml(text);//, Html.FROM_HTML_MODE_LEGACY);
             } else {
                 result = Html.fromHtml(text);
             }

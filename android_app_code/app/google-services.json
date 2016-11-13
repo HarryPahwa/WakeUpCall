@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "223761987495",
+    "firebase_url": "https://ualberta-ecocar.firebaseio.com",
+    "project_id": "ualberta-ecocar",
+    "storage_bucket": "ualberta-ecocar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223761987495:android:e3c560daf88da670",
+        "android_client_info": {
+          "package_name": "ca.ualberta_ecocar.ecocar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223761987495-ehrc7nn7tatgsq7ioip5ofmblsn3u5ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdbbG4QOPleZoOP-xp4oOeJ5zX5Tsnsbg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

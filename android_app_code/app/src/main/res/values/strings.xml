@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="teensy">D7:F1:02:F7:A3:01</string>
     <!-- General -->
-    <string name="app_name">Bluefruit LE</string>
+    <string name="app_name">WakeUp Call</string>
     <string name="app_full_name">Bluefruit LE Connect</string>
     <string name="action_info">Info</string>
     <string name="action_mqttsettings">MQTT</string>

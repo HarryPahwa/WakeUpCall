@@ -1,33 +1,36 @@
 package com.adafruit.bluefruit.le.connect.app;
 
-import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.bluetooth.BluetoothGattCharacteristic;
-import android.content.ClipData;
-import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.location.Location;
+
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.util.TypedValue;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -39,14 +42,32 @@ import com.adafruit.bluefruit.le.connect.app.settings.PreferencesFragment;
 import com.adafruit.bluefruit.le.connect.ble.BleManager;
 import com.adafruit.bluefruit.le.connect.mqtt.MqttManager;
 import com.adafruit.bluefruit.le.connect.mqtt.MqttSettings;
+import com.drivewyze.EventReceiver;
+import com.drivewyze.GPXLocationProvider;
+import com.drivewyze.JDRIVE;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+import static com.adafruit.bluefruit.le.connect.R.id.BTLEText;
+
+//import android.location.LocationManager;
+
+//import org.json.JSONObject;
+//import java.text.ParseException;
 
 public class UartActivity extends UartInterfaceActivity implements MqttManager.MqttManagerListener {
     // Log
@@ -76,7 +97,9 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
     private EditText mBufferTextView;
     private ListView mBufferListView;
     private TimestampListAdapter mBufferListAdapter;
-    private EditText mSendEditText;
+    private TextView BTLETextView;
+
+//    private EditText mSendEditText;
     private MenuItem mMqttMenuItem;
     private Handler mMqttMenuItemAnimationHandler;
     private TextView mSentBytesTextView;
@@ -113,6 +136,99 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
 
     private int maxPacketsToPaintAsText;
 
+    /////LOCATION
+
+    private LocationManager locationManager;
+///////////////DRIVE
+    public String getUIName(String evt) {
+        try {
+            JSONParser parser = new JSONParser();
+            JSONObject json_o = (JSONObject)parser.parse(evt);
+            Object o = json_o.get("name");
+            if (o != null) {
+                return o.toString();
+            }
+        } catch(ParseException pe) {
+            Log.e(TAG, pe.getMessage());
+        }
+        return "Unknown UI";
+    }
+
+    public String getLoc(String evt) {
+        try {
+            JSONParser parser = new JSONParser();
+            JSONObject json_o = (JSONObject)parser.parse(evt);
+            Object o = json_o.get("loc");
+            if (o != null) {
+                return o.toString();
+            }
+        } catch(ParseException pe) {
+            Log.e(TAG, pe.getMessage());
+        }
+        return "Unknown Loc";
+    }
+
+    private void HookupStartButton() {
+        final Button startButton = (Button) findViewById(R.id.startButton);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Log.v(TAG, "initializing drive");
+                Log.v(TAG, getFilesDir().getPath());
+                JDRIVE.instance().initialize(getFilesDir().getPath());
+                JDRIVE.instance().setLocationProvider(new GPXLocationProvider(new File(getFilesDir(), "master.gpx").getPath()));
+
+                // Setup the listener for the OSR
+                JDRIVE.instance().osr(new EventReceiver() {
+                    @Override
+                    public void receive(String event, String ts) {
+                        Log.v(TAG, "RECEIVED AN OSR!!!");
+                        Log.v(TAG, "TS: " + ts);
+                        sendOSU(ts);
+                    }
+                });
+
+                // Setup the listener for the UI event which happens when a fence is entered and exited.
+                JDRIVE.instance().addListenerForEvent("UI", "UI", new EventReceiver() {
+                    @Override
+                    public void receive(final String event, String ts) {
+                        Log.v(TAG, "UI Event received!");
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                TextView tv = (TextView)findViewById(R.id.textView3);
+                                tv.setText(getUIName(event));
+
+                                tv = (TextView)findViewById(R.id.textView2);
+                                tv.setText(getLoc(event));
+
+                            }
+                        });
+                    }
+                });
+
+                // start driving.
+                Log.v(TAG, "running drive");
+                Snackbar.make(v, "running!", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
+                JDRIVE.instance().run();
+            }
+        });
+    }
+
+    private void HookupStopButton() {
+        final Button stopButton = (Button) findViewById(R.id.stopButton);
+        stopButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.v(TAG, "stopping drive");
+                Snackbar.make(v, "stopping", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
+                JDRIVE.instance().stop();
+            }
+        });
+    }
+
+////DRIVE
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -139,27 +255,27 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         if (mBufferTextView != null) {
             mBufferTextView.setKeyListener(null);     // make it not editable
         }
-
-        mSendEditText = (EditText) findViewById(R.id.sendEditText);
-        mSendEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
-                if (actionId == EditorInfo.IME_ACTION_SEND) {
-                    onClickSend(null);
-                    return true;
-                }
-
-                return false;
-            }
-        });
-        mSendEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            public void onFocusChange(View view, boolean hasFocus) {
-                if (!hasFocus) {
-                    // Dismiss keyboard when sendEditText loses focus
-                    dismissKeyboard(view);
-                }
-            }
-        });
+        BTLETextView=(TextView)findViewById(BTLEText);
+//        mSendEditText = (EditText) findViewById(R.id.sendEditText);
+//        mSendEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+//            @Override
+//            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+//                if (actionId == EditorInfo.IME_ACTION_SEND) {
+//                    onClickSend(null);
+//                    return true;
+//                }
+//
+//                return false;
+//            }
+//        });
+//        mSendEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            public void onFocusChange(View view, boolean hasFocus) {
+//                if (!hasFocus) {
+//                    // Dismiss keyboard when sendEditText loses focus
+//                    dismissKeyboard(view);
+//                }
+//            }
+//        });
 
         mSentBytesTextView = (TextView) findViewById(R.id.sentBytesTextView);
         mReceivedBytesTextView = (TextView) findViewById(R.id.receivedBytesTextView);
@@ -185,6 +301,34 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         if (MqttSettings.getInstance(this).isConnected()) {
             mMqttManager.connectFromSavedSettings(this);
         }
+
+        copyGPXFile();
+        HookupStartButton();
+        HookupStopButton();
+
+
+        ////////////////LOCATION
+
+        // Define a listener that responds to location updates
+        LocationManager locationManager = (LocationManager) this
+                .getSystemService(Context.LOCATION_SERVICE);
+        LocationListener locationListener = new LocationListener() {
+            public void onLocationChanged(Location location) {
+                // Called when a new location is found by the network location provider.
+//                makeUseOfNewLocation(location);
+
+                BTLETextView.setText(Double.toString(location.getLatitude())+", "+Double.toString(location.getLongitude()));
+            }
+
+            public void onStatusChanged(String provider, int status, Bundle extras) {}
+
+            public void onProviderEnabled(String provider) {}
+
+            public void onProviderDisabled(String provider) {}
+        };
+
+// Register the listener with the Location Manager to receive location updates
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
     }
 
     @Override
@@ -244,9 +388,9 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
     }
 
     public void onClickSend(View view) {
-        String data = mSendEditText.getText().toString();
-        mSendEditText.setText("");       // Clear editText
-
+//        String data = mSendEditText.getText().toString();
+//        mSendEditText.setText("");       // Clear editText
+        String data="1";
         uartSendData(data, false);
     }
 
@@ -294,44 +438,46 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         updateUI();
     }
 
-    public void onClickCopy(View view) {
+    public void BTLECheck(View view) {
         String text = mBufferTextView.getText().toString(); // mShowDataInHexFormat ? mHexSpanBuffer.toString() : mAsciiSpanBuffer.toString();
-        ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-        ClipData clip = ClipData.newPlainText("UART", text);
-        clipboard.setPrimaryClip(clip);
+
+        BTLETextView.setText(text);
+//        ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+//        ClipData clip = ClipData.newPlainText("UART", text);
+//        clipboard.setPrimaryClip(clip);
     }
 
-    public void onClickClear(View view) {
-        mTextSpanBuffer.clear();
-        mDataBufferLastSize = 0;
-        mBufferListAdapter.clear();
-        mBufferTextView.setText("");
+//    public void onClickClear(View view) {
+//        mTextSpanBuffer.clear();
+//        mDataBufferLastSize = 0;
+//        mBufferListAdapter.clear();
+//        mBufferTextView.setText("");
+//
+//        mDataBuffer.clear();
+//        mSentBytes = 0;
+//        mReceivedBytes = 0;
+//        updateUI();
+//    }
 
-        mDataBuffer.clear();
-        mSentBytes = 0;
-        mReceivedBytes = 0;
-        updateUI();
-    }
-
-    public void onClickShare(View view) {
-        String textToSend = mBufferTextView.getText().toString(); // (mShowDataInHexFormat ? mHexSpanBuffer : mAsciiSpanBuffer).toString();
-
-        if (textToSend.length() > 0) {
-
-            Intent sendIntent = new Intent();
-            sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, textToSend);
-            sendIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.uart_share_subject));     // subject will be used if sent to an email app
-            sendIntent.setType("text/*");       // Note: don't use text/plain because dropbox will not appear as destination
-            // startActivity(sendIntent);
-            startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.uart_sharechooser_title)));      // Always show the app-chooser
-        } else {
-            new AlertDialog.Builder(this)
-                    .setMessage(getString(R.string.uart_share_empty))
-                    .setPositiveButton(android.R.string.ok, null)
-                    .show();
-        }
-    }
+//    public void onClickShare(View view) {
+//        String textToSend = mBufferTextView.getText().toString(); // (mShowDataInHexFormat ? mHexSpanBuffer : mAsciiSpanBuffer).toString();
+//
+//        if (textToSend.length() > 0) {
+//
+//            Intent sendIntent = new Intent();
+//            sendIntent.setAction(Intent.ACTION_SEND);
+//            sendIntent.putExtra(Intent.EXTRA_TEXT, textToSend);
+//            sendIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.uart_share_subject));     // subject will be used if sent to an email app
+//            sendIntent.setType("text/*");       // Note: don't use text/plain because dropbox will not appear as destination
+//            // startActivity(sendIntent);
+//            startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.uart_sharechooser_title)));      // Always show the app-chooser
+//        } else {
+//            new AlertDialog.Builder(this)
+//                    .setMessage(getString(R.string.uart_share_empty))
+//                    .setPositiveButton(android.R.string.ok, null)
+//                    .show();
+//        }
+//    }
 
     /*
     public void onClickFormatAscii(View view) {
@@ -803,4 +949,57 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         }
     }
     // endregion
+
+
+    ///DRIVE
+    private void copyGPXFile() {
+        try {
+            InputStream istream = getAssets().open("gpx/master.gpx");
+            int size = istream.available();
+            byte[] buffer = new byte[size];
+            istream.read(buffer);
+            istream.close();
+
+            FileOutputStream ostream = new FileOutputStream(new File(getFilesDir() + "/master.gpx"));
+            ostream.write(buffer);
+            ostream.close();
+        } catch(Exception e) {
+
+        }
+    }
+
+    private void sendOSU(String ts) {
+        try {
+            Log.v(TAG, "preparing OSU");
+            String[] files = getAssets().list("os");
+            StringBuilder payload = new StringBuilder();
+            int numFiles = files.length;
+            int count = 0;
+            for (String file : files) {
+                count++;
+                Log.v(TAG, "reading file: " + file);
+                InputStream stream = getAssets().open("os/" + file);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    payload.append(line);
+                }
+                if (count < numFiles)
+                    payload.append(',');
+            }
+            Log.v(TAG, "sending OSU");
+            //JDRIVE.instance().osu(payload.toString(), ts);
+        } catch (Exception ex) {
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 }
