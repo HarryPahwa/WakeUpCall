@@ -1,0 +1,2861 @@
+    {
+        "_id": "57ed2e8bd8e6e25432a6bc32",
+        "id": 4752,
+        "thirdPartyPrograms": [ ],
+        "fenceType": "B",
+        "location": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [ -111.562332, 53.239616 ],
+                    [ -113.565323, 53.239933 ],
+                    [ -113.562248, 53.248684 ],
+                    [ -113.560944, 53.248566 ],
+                    [ -113.562332, 53.239616 ]
+                ]
+            ]
+        },
+        "type": "fence",
+        "bearing": 180,
+        "Seq": 64407,
+        "loc": "AB Leduc Hwy-2 SB",
+        "status": 1,
+        "st": 1
+    },
+
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc33",
+    "id": 4753,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.571671, 53.231972 ],
+    [ -113.572441, 53.232182 ],
+    [ -113.570602, 53.234337 ],
+    [ -113.569847, 53.234123 ],
+    [ -113.571671, 53.231972 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 225,
+    "Seq": 64408,
+    "loc": "AB Leduc Hwy-2 SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc34",
+    "id": 4754,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.572144, 53.230293 ],
+    [ -113.572784, 53.230484 ],
+    [ -113.570702, 53.232952 ],
+    [ -113.570053, 53.232761 ],
+    [ -113.572144, 53.230293 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 225,
+    "Seq": 64409,
+    "loc": "AB Leduc Hwy-2 SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c9",
+    "id": 4709,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "AG-B",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.552471, 53.430209 ],
+    [ -113.554617, 53.430706 ],
+    [ -113.538881, 53.434735 ],
+    [ -113.538033, 53.434055 ],
+    [ -113.552471, 53.430209 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 64,
+    "Seq": 62163,
+    "loc": "FL-Ag QA Henday East 111St EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8ca",
+    "id": 4710,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "AG-A",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.572955, 53.427668 ],
+    [ -113.571996, 53.428679 ],
+    [ -113.562005, 53.429178 ],
+    [ -113.558361, 53.428347 ],
+    [ -113.572955, 53.427668 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 86,
+    "Seq": 62164,
+    "loc": "FL-Ag QA Henday East 111St EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8cb",
+    "id": 4711,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "AG-C1",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.521233, 53.432645 ],
+    [ -113.524834, 53.434168 ],
+    [ -113.523688, 53.43426 ],
+    [ -113.520935, 53.433172 ],
+    [ -113.521233, 53.432645 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 135,
+    "Seq": 62165,
+    "loc": "FL-Ag QA Henday East 111St EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8cc",
+    "id": 4712,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "AG-C2",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.524332, 53.434432 ],
+    [ -113.524368, 53.43488 ],
+    [ -113.514605, 53.434783 ],
+    [ -113.514374, 53.434441 ],
+    [ -113.524332, 53.434432 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 91,
+    "Seq": 62166,
+    "loc": "FL-Ag QA Henday East 111St EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf32",
+    "id": 4717,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.592028, 53.454961 ],
+    [ -113.592586, 53.458769 ],
+    [ -113.58735, 53.46467 ],
+    [ -113.584003, 53.464389 ],
+    [ -113.592028, 53.454961 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 207,
+    "Seq": 64494,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf33",
+    "id": 4718,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.609665, 53.439892 ],
+    [ -113.610146, 53.440304 ],
+    [ -113.603012, 53.443802 ],
+    [ -113.602615, 53.443394 ],
+    [ -113.609665, 53.439892 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 232,
+    "Seq": 64495,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf34",
+    "id": 4719,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.598579, 53.439175 ],
+    [ -113.601646, 53.443157 ],
+    [ -113.600761, 53.443314 ],
+    [ -113.597679, 53.439575 ],
+    [ -113.598579, 53.439175 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 153,
+    "Seq": 64496,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf35",
+    "id": 4720,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.576458, 53.474514 ],
+    [ -113.578025, 53.474633 ],
+    [ -113.576541, 53.476364 ],
+    [ -113.574864, 53.47648 ],
+    [ -113.576458, 53.474514 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 198,
+    "Seq": 64497,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8be",
+    "id": 4725,
+    "thirdPartyPrograms": [ "NORPASS" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.520215, 53.482938 ],
+    [ -113.5401, 53.483009 ],
+    [ -113.5401, 53.483421 ],
+    [ -113.520298, 53.483492 ],
+    [ -113.520215, 53.482938 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64510,
+    "loc": "AB QA Whitemud-2 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8bf",
+    "id": 4726,
+    "thirdPartyPrograms": [ "NORPASS" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.566815, 53.482292 ],
+    [ -113.572182, 53.482483 ],
+    [ -113.571594, 53.483227 ],
+    [ -113.56676, 53.482594 ],
+    [ -113.566815, 53.482292 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 272,
+    "Seq": 64511,
+    "loc": "AB QA Whitemud-2 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c0",
+    "id": 4727,
+    "thirdPartyPrograms": [ "NORPASS" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.568108, 53.483093 ],
+    [ -113.569778, 53.48315 ],
+    [ -113.572128, 53.486237 ],
+    [ -113.571136, 53.486549 ],
+    [ -113.568108, 53.483093 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 331,
+    "Seq": 64512,
+    "loc": "AB QA Whitemud-2 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c1",
+    "id": 4728,
+    "thirdPartyPrograms": [ "NORPASS" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.562721, 53.482303 ],
+    [ -113.562698, 53.482914 ],
+    [ -113.547406, 53.483119 ],
+    [ -113.543867, 53.482503 ],
+    [ -113.562721, 53.482303 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 269,
+    "Seq": 64513,
+    "loc": "AB QA Whitemud-2 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc31",
+    "id": 4751,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.561462, 53.249893 ],
+    [ -113.562225, 53.249905 ],
+    [ -113.562294, 53.25676 ],
+    [ -113.561516, 53.256752 ],
+    [ -113.561462, 53.249893 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 180,
+    "Seq": 64406,
+    "loc": "AB Leduc Hwy-2 SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc45",
+    "id": 6670,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.588242, 53.424984 ],
+    [ -113.588654, 53.425526 ],
+    [ -113.58403, 53.425434 ],
+    [ -113.584618, 53.425018 ],
+    [ -113.588242, 53.424984 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64433,
+    "loc": "AB QA Ellerslie-Rd EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc46",
+    "id": 6671,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.588707, 53.424408 ],
+    [ -113.588234, 53.424965 ],
+    [ -113.584602, 53.424992 ],
+    [ -113.584068, 53.42445 ],
+    [ -113.588707, 53.424408 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64434,
+    "loc": "AB QA Ellerslie-Rd EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc47",
+    "id": 6672,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.60717, 53.424736 ],
+    [ -113.614227, 53.42474 ],
+    [ -113.614227, 53.424976 ],
+    [ -113.607132, 53.424984 ],
+    [ -113.60717, 53.424736 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64435,
+    "loc": "AB QA Ellerslie-Rd EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc48",
+    "id": 6673,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.595596, 53.424717 ],
+    [ -113.603226, 53.424751 ],
+    [ -113.603233, 53.425068 ],
+    [ -113.59565, 53.425076 ],
+    [ -113.595596, 53.424717 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64436,
+    "loc": "AB QA Ellerslie-Rd EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc49",
+    "id": 6674,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.555679, 53.425041 ],
+    [ -113.555893, 53.425392 ],
+    [ -113.553375, 53.42543 ],
+    [ -113.553337, 53.425049 ],
+    [ -113.555679, 53.425041 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64437,
+    "loc": "AB QA Ellerslie-Rd-2 EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc4a",
+    "id": 6675,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.555107, 53.424732 ],
+    [ -113.555023, 53.425034 ],
+    [ -113.553329, 53.425041 ],
+    [ -113.553085, 53.42474 ],
+    [ -113.555107, 53.424732 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64438,
+    "loc": "AB QA Ellerslie-Rd-2 EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc4b",
+    "id": 6676,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.572319, 53.424694 ],
+    [ -113.572365, 53.425236 ],
+    [ -113.566406, 53.425114 ],
+    [ -113.566437, 53.424755 ],
+    [ -113.572319, 53.424694 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64439,
+    "loc": "AB QA Ellerslie-Rd-2 EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc4c",
+    "id": 6677,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.564026, 53.42469 ],
+    [ -113.563957, 53.425106 ],
+    [ -113.558258, 53.425098 ],
+    [ -113.558205, 53.424782 ],
+    [ -113.564026, 53.42469 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 90,
+    "Seq": 64440,
+    "loc": "AB QA Ellerslie-Rd-2 EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c2",
+    "id": 6678,
+    "thirdPartyPrograms": [ "NORPASS" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.57239, 53.479529 ],
+    [ -113.572905, 53.479899 ],
+    [ -113.571553, 53.481342 ],
+    [ -113.570974, 53.481125 ],
+    [ -113.57239, 53.479529 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 210,
+    "Seq": 64514,
+    "loc": "AB QA Whitemud-2 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf36",
+    "id": 6679,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.578119, 53.472531 ],
+    [ -113.579514, 53.472543 ],
+    [ -113.577561, 53.475021 ],
+    [ -113.576252, 53.474983 ],
+    [ -113.578119, 53.472531 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 201,
+    "Seq": 64498,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf37",
+    "id": 6680,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.580995, 53.469465 ],
+    [ -113.581746, 53.469785 ],
+    [ -113.579085, 53.472888 ],
+    [ -113.577926, 53.472901 ],
+    [ -113.580995, 53.469465 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 211,
+    "Seq": 64499,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf38",
+    "id": 6682,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.613245, 53.437943 ],
+    [ -113.613675, 53.438404 ],
+    [ -113.612258, 53.439413 ],
+    [ -113.611593, 53.439043 ],
+    [ -113.613245, 53.437943 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 225,
+    "Seq": 64501,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8bc",
+    "id": 6685,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.591337, 53.449293 ],
+    [ -113.591337, 53.45259 ],
+    [ -113.588763, 53.452589 ],
+    [ -113.588548, 53.451235 ],
+    [ -113.591337, 53.449293 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 181,
+    "Seq": 64504,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8bd",
+    "id": 6686,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.588462, 53.451158 ],
+    [ -113.59138, 53.451235 ],
+    [ -113.592453, 53.458799 ],
+    [ -113.589063, 53.462478 ],
+    [ -113.588462, 53.451158 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 182,
+    "Seq": 64505,
+    "loc": "AB QA Terwillegar-Drive SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c3",
+    "id": 6687,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "B",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.610864, 53.455835 ],
+    [ -113.620219, 53.461942 ],
+    [ -113.619103, 53.46304 ],
+    [ -113.608675, 53.456295 ],
+    [ -113.610864, 53.455835 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 315,
+    "Seq": 64225,
+    "loc": "AB QA Henday West 184St WB",
+    "status": 4,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c4",
+    "id": 6688,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.599706, 53.445535 ],
+    [ -113.604641, 53.449855 ],
+    [ -113.602881, 53.449625 ],
+    [ -113.598504, 53.44574 ],
+    [ -113.599706, 53.445535 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 319,
+    "Seq": 64238,
+    "loc": "AB QA Henday West 184St WB",
+    "status": 4,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c5",
+    "id": 6689,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "D",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.637342, 53.467945 ],
+    [ -113.641205, 53.468839 ],
+    [ -113.640904, 53.469555 ],
+    [ -113.636827, 53.468635 ],
+    [ -113.637342, 53.467945 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 289,
+    "Seq": 64251,
+    "loc": "AB QA Henday West 184St WB",
+    "status": 4,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c6",
+    "id": 6690,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C1",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.624468, 53.465212 ],
+    [ -113.626099, 53.467383 ],
+    [ -113.625112, 53.468099 ],
+    [ -113.623652, 53.465978 ],
+    [ -113.624468, 53.465212 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 342,
+    "Seq": 64265,
+    "loc": "AB QA Henday West 184St WB",
+    "status": 4,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c7",
+    "id": 6691,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C2",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.627987, 53.465263 ],
+    [ -113.634081, 53.467077 ],
+    [ -113.632493, 53.46746 ],
+    [ -113.627086, 53.465825 ],
+    [ -113.627987, 53.465263 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 297,
+    "Seq": 64279,
+    "loc": "AB QA Henday West 184St WB",
+    "status": 4,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8c8",
+    "id": 6692,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W2",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.612108, 53.456959 ],
+    [ -113.616056, 53.459489 ],
+    [ -113.614812, 53.460102 ],
+    [ -113.610864, 53.457496 ],
+    [ -113.612108, 53.456959 ]
+    ]
+    ],
+    "type": "Polygon"
+    },
+    "type": "fence",
+    "bearing": 315,
+    "Seq": 64293,
+    "loc": "AB QA Henday West 184St WB",
+    "status": 4,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf1a",
+    "id": 6693,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.648801, 53.470525 ],
+    [ -113.657298, 53.476247 ],
+    [ -113.654637, 53.475583 ],
+    [ -113.647943, 53.471726 ],
+    [ -113.648801, 53.470525 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 317,
+    "Seq": 64458,
+    "loc": "AB QA Henday West  62Ave NB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf1b",
+    "id": 6694,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660002, 53.48018 ],
+    [ -113.660388, 53.487433 ],
+    [ -113.658414, 53.487765 ],
+    [ -113.657598, 53.480895 ],
+    [ -113.660002, 53.48018 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 358,
+    "Seq": 64459,
+    "loc": "AB QA Henday West  62Ave NB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf1c",
+    "id": 6695,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659744, 53.490931 ],
+    [ -113.659873, 53.49402 ],
+    [ -113.658671, 53.49522 ],
+    [ -113.658628, 53.490931 ],
+    [ -113.659744, 53.490931 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 359,
+    "Seq": 64460,
+    "loc": "AB QA Henday West  62Ave NB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf1d",
+    "id": 6696,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659658, 53.497543 ],
+    [ -113.659658, 53.499841 ],
+    [ -113.658414, 53.499815 ],
+    [ -113.658285, 53.497645 ],
+    [ -113.659658, 53.497543 ]
+    ]
+    ]
+    },
+    "type": "fence",
+    "bearing": 358,
+    "Seq": 64461,
+    "loc": "AB QA Henday West  62Ave NB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf1e",
+    "id": 6697,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659916, 53.482325 ],
+    [ -113.660173, 53.486181 ],
+    [ -113.658414, 53.486181 ],
+    [ -113.658028, 53.482479 ],
+    [ -113.659916, 53.482325 ]
+    ]
+    ],
+    "centroid": [ -113.659133, 53.484291 ]
+    },
+    "type": "fence",
+    "bearing": 359,
+    "Seq": 64462,
+    "loc": "AB QA Henday West  62Ave NB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf1f",
+    "id": 6698,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.658113, 53.491441 ],
+    [ -113.658071, 53.492565 ],
+    [ -113.656826, 53.493484 ],
+    [ -113.655195, 53.49351 ],
+    [ -113.658113, 53.491441 ]
+    ]
+    ],
+    "centroid": [ -113.657051, 53.49275 ]
+    },
+    "type": "fence",
+    "bearing": 47,
+    "Seq": 64463,
+    "loc": "AB QA Henday West  62Ave NB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf24",
+    "id": 6699,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.658693, 53.52108 ],
+    [ -113.659959, 53.521099 ],
+    [ -113.659969, 53.524334 ],
+    [ -113.658543, 53.524307 ],
+    [ -113.658693, 53.52108 ]
+    ]
+    ],
+    "centroid": [ -113.659291, 53.522705 ]
+    },
+    "type": "fence",
+    "bearing": 1,
+    "Seq": 64466,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf20",
+    "id": 6700,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660045, 53.512041 ],
+    [ -113.660045, 53.516047 ],
+    [ -113.658586, 53.516303 ],
+    [ -113.6585, 53.512041 ],
+    [ -113.660045, 53.512041 ]
+    ]
+    ],
+    "centroid": [ -113.659294, 53.514108 ]
+    },
+    "type": "fence",
+    "bearing": 359,
+    "Seq": 64464,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf21",
+    "id": 6701,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.657813, 53.533906 ],
+    [ -113.657856, 53.534926 ],
+    [ -113.654981, 53.53689 ],
+    [ -113.652857, 53.536405 ],
+    [ -113.657813, 53.533906 ]
+    ]
+    ],
+    "centroid": [ -113.655877, 53.535532 ]
+    },
+    "type": "fence",
+    "bearing": 48,
+    "Seq": 64465,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf22",
+    "id": 6702,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659401, 53.534492 ],
+    [ -113.659487, 53.537936 ],
+    [ -113.658242, 53.537604 ],
+    [ -113.658242, 53.534569 ],
+    [ -113.659401, 53.534492 ]
+    ]
+    ],
+    "centroid": [ -113.658843, 53.53615 ]
+    },
+    "type": "fence",
+    "bearing": 1,
+    "Seq": 64467,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf23",
+    "id": 6703,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660173, 53.519645 ],
+    [ -113.660088, 53.525105 ],
+    [ -113.658371, 53.526125 ],
+    [ -113.658414, 53.520257 ],
+    [ -113.660173, 53.519645 ]
+    ]
+    ],
+    "centroid": [ -113.659261, 53.522783 ]
+    },
+    "type": "fence",
+    "bearing": 1,
+    "Seq": 64468,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf25",
+    "id": 6704,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.658113, 53.540435 ],
+    [ -113.659573, 53.540639 ],
+    [ -113.65953, 53.543164 ],
+    [ -113.658199, 53.542985 ],
+    [ -113.658113, 53.540435 ]
+    ]
+    ],
+    "centroid": [ -113.658854, 53.541806 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 64469,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf26",
+    "id": 6705,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.66116, 53.564299 ],
+    [ -113.661762, 53.567944 ],
+    [ -113.659981, 53.568121 ],
+    [ -113.659251, 53.564592 ],
+    [ -113.66116, 53.564299 ]
+    ]
+    ],
+    "centroid": [ -113.660539, 53.566239 ]
+    },
+    "type": "fence",
+    "bearing": 353,
+    "Seq": 64471,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf27",
+    "id": 6706,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.66116, 53.561112 ],
+    [ -113.662835, 53.569473 ],
+    [ -113.659443, 53.569881 ],
+    [ -113.658028, 53.561189 ],
+    [ -113.66116, 53.561112 ]
+    ]
+    ],
+    "centroid": [ -113.660366, 53.565414 ]
+    },
+    "type": "fence",
+    "bearing": 353,
+    "Seq": 64472,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf28",
+    "id": 6707,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659401, 53.547626 ],
+    [ -113.659444, 53.551247 ],
+    [ -113.657942, 53.551935 ],
+    [ -113.657899, 53.54885 ],
+    [ -113.659401, 53.547626 ]
+    ]
+    ],
+    "centroid": [ -113.658671, 53.549914 ]
+    },
+    "type": "fence",
+    "bearing": 359,
+    "Seq": 64473,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf29",
+    "id": 6708,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.65408, 53.584098 ],
+    [ -113.657169, 53.584659 ],
+    [ -113.65159, 53.588938 ],
+    [ -113.650131, 53.587461 ],
+    [ -113.65408, 53.584098 ]
+    ]
+    ],
+    "centroid": [ -113.653242, 53.586289 ]
+    },
+    "type": "fence",
+    "bearing": 37,
+    "Seq": 64474,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf2a",
+    "id": 6709,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.66292, 53.575028 ],
+    [ -113.660173, 53.581194 ],
+    [ -113.65777, 53.580583 ],
+    [ -113.65983, 53.575333 ],
+    [ -113.66292, 53.575028 ]
+    ]
+    ],
+    "centroid": [ -113.660173, 53.578035 ]
+    },
+    "type": "fence",
+    "bearing": 18,
+    "Seq": 64475,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf2b",
+    "id": 6710,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.653736, 53.572785 ],
+    [ -113.653564, 53.574263 ],
+    [ -113.644896, 53.574111 ],
+    [ -113.645411, 53.572785 ],
+    [ -113.653736, 53.572785 ]
+    ]
+    ],
+    "centroid": [ -113.649402, 53.573486 ]
+    },
+    "type": "fence",
+    "bearing": 95,
+    "Seq": 64476,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf2d",
+    "id": 6712,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W3",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659186, 53.549844 ],
+    [ -113.659358, 53.553949 ],
+    [ -113.658071, 53.554408 ],
+    [ -113.658071, 53.550074 ],
+    [ -113.659186, 53.549844 ]
+    ]
+    ],
+    "centroid": [ -113.658672, 53.552069 ]
+    },
+    "type": "fence",
+    "bearing": 358,
+    "Seq": 64478,
+    "loc": "AB QA Henday West YlwHdHwy NB",
+    "status": 1,
+    "st": 3
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf2e",
+    "id": 6713,
+    "thirdPartyPrograms": [ "PrePass", "NORPASS" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659701, 53.57834 ],
+    [ -113.661332, 53.578799 ],
+    [ -113.658199, 53.583258 ],
+    [ -113.656869, 53.58257 ],
+    [ -113.659701, 53.57834 ]
+    ]
+    ],
+    "centroid": [ -113.659025, 53.580742 ]
+    },
+    "type": "fence",
+    "bearing": 204,
+    "Seq": 64479,
+    "loc": "AB QA Henday West YlwHdHwy SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf2f",
+    "id": 6714,
+    "thirdPartyPrograms": [ "PrePass", "NORPASS" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.661675, 53.564197 ],
+    [ -113.66189, 53.566873 ],
+    [ -113.659573, 53.567128 ],
+    [ -113.660045, 53.564706 ],
+    [ -113.661675, 53.564197 ]
+    ]
+    ],
+    "centroid": [ -113.660796, 53.565726 ]
+    },
+    "type": "fence",
+    "bearing": 177,
+    "Seq": 64480,
+    "loc": "AB QA Henday West YlwHdHwy SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf30",
+    "id": 6715,
+    "thirdPartyPrograms": [ "PrePass", "NORPASS" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.662319, 53.570364 ],
+    [ -113.662534, 53.573168 ],
+    [ -113.660688, 53.57304 ],
+    [ -113.660517, 53.570543 ],
+    [ -113.662319, 53.570364 ]
+    ]
+    ],
+    "centroid": [ -113.661515, 53.571779 ]
+    },
+    "type": "fence",
+    "bearing": 177,
+    "Seq": 64481,
+    "loc": "AB QA Henday West YlwHdHwy SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf31",
+    "id": 6716,
+    "thirdPartyPrograms": [ "PrePass", "NORPASS" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.653865, 53.585754 ],
+    [ -113.655968, 53.586366 ],
+    [ -113.651719, 53.589626 ],
+    [ -113.649573, 53.588786 ],
+    [ -113.653865, 53.585754 ]
+    ]
+    ],
+    "centroid": [ -113.652781, 53.587633 ]
+    },
+    "type": "fence",
+    "bearing": 214,
+    "Seq": 64482,
+    "loc": "AB QA Henday West YlwHdHwy SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8cf",
+    "id": 6717,
+    "thirdPartyPrograms": [ "PrePass", "NORPASS" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.674507, 53.571792 ],
+    [ -113.675022, 53.573244 ],
+    [ -113.671546, 53.573881 ],
+    [ -113.671546, 53.572174 ],
+    [ -113.674507, 53.571792 ]
+    ]
+    ],
+    "centroid": [ -113.673155, 53.572773 ]
+    },
+    "type": "fence",
+    "bearing": 257,
+    "Seq": 64483,
+    "loc": "AB QA Henday West YlwHdHwy SB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf14",
+    "id": 6718,
+    "thirdPartyPrograms": [ "NCPass" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659787, 53.506809 ],
+    [ -113.660045, 53.508953 ],
+    [ -113.658843, 53.509132 ],
+    [ -113.658886, 53.507039 ],
+    [ -113.659787, 53.506809 ]
+    ]
+    ],
+    "centroid": [ -113.65939, 53.507983 ]
+    },
+    "type": "fence",
+    "bearing": 179,
+    "Seq": 64452,
+    "loc": "AB QA Henday South Whitemud SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf15",
+    "id": 6719,
+    "thirdPartyPrograms": [ "NCPass" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659058, 53.532758 ],
+    [ -113.660088, 53.532783 ],
+    [ -113.660045, 53.537145 ],
+    [ -113.658929, 53.536354 ],
+    [ -113.659058, 53.532758 ]
+    ]
+    ],
+    "centroid": [ -113.65953, 53.53476 ]
+    },
+    "type": "fence",
+    "bearing": 179,
+    "Seq": 64453,
+    "loc": "AB QA Henday South Whitemud SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf16",
+    "id": 6720,
+    "thirdPartyPrograms": [ "NCPass" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.659873, 53.510152 ],
+    [ -113.659916, 53.514287 ],
+    [ -113.6588, 53.514695 ],
+    [ -113.6588, 53.511633 ],
+    [ -113.659873, 53.510152 ]
+    ]
+    ],
+    "centroid": [ -113.659347, 53.512692 ]
+    },
+    "type": "fence",
+    "bearing": 178,
+    "Seq": 64454,
+    "loc": "AB QA Henday South Whitemud SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf17",
+    "id": 6721,
+    "thirdPartyPrograms": [ "NCPass" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.658886, 53.520487 ],
+    [ -113.660216, 53.520768 ],
+    [ -113.660216, 53.526381 ],
+    [ -113.658886, 53.526457 ],
+    [ -113.658886, 53.520487 ]
+    ]
+    ],
+    "centroid": [ -113.659551, 53.523523 ]
+    },
+    "type": "fence",
+    "bearing": 178,
+    "Seq": 64455,
+    "loc": "AB QA Henday South Whitemud SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf18",
+    "id": 6722,
+    "thirdPartyPrograms": [ "NCPass" ],
+    "fenceType": "W2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660302, 53.543572 ],
+    [ -113.660216, 53.547397 ],
+    [ -113.658714, 53.547575 ],
+    [ -113.658929, 53.543623 ],
+    [ -113.660302, 53.543572 ]
+    ]
+    ],
+    "centroid": [ -113.65954, 53.545542 ]
+    },
+    "type": "fence",
+    "bearing": 180,
+    "Seq": 64456,
+    "loc": "AB QA Henday South Whitemud SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf19",
+    "id": 6723,
+    "thirdPartyPrograms": [ "NCPass" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.666396, 53.511684 ],
+    [ -113.672104, 53.51176 ],
+    [ -113.671203, 53.512934 ],
+    [ -113.66601, 53.51296 ],
+    [ -113.666396, 53.511684 ]
+    ]
+    ],
+    "centroid": [ -113.668928, 53.512335 ]
+    },
+    "type": "fence",
+    "bearing": 271,
+    "Seq": 64457,
+    "loc": "AB QA Henday South Whitemud SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf0a",
+    "id": 6724,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "W2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660217, 53.489986 ],
+    [ -113.660045, 53.49379 ],
+    [ -113.658457, 53.493816 ],
+    [ -113.658628, 53.490062 ],
+    [ -113.660217, 53.489986 ]
+    ]
+    ],
+    "centroid": [ -113.659337, 53.491914 ]
+    },
+    "type": "fence",
+    "bearing": 181,
+    "Seq": 64441,
+    "loc": "AB QA Henday South Lessard SB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf0b",
+    "id": 6725,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660645, 53.48802 ],
+    [ -113.660216, 53.497033 ],
+    [ -113.658113, 53.497135 ],
+    [ -113.6585, 53.488198 ],
+    [ -113.660645, 53.48802 ]
+    ]
+    ],
+    "centroid": [ -113.659368, 53.492597 ]
+    },
+    "type": "fence",
+    "bearing": 181,
+    "Seq": 64442,
+    "loc": "AB QA Henday South Lessard SB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf0c",
+    "id": 6726,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.660388, 53.500351 ],
+    [ -113.660345, 53.504384 ],
+    [ -113.659015, 53.504231 ],
+    [ -113.659058, 53.500351 ],
+    [ -113.660388, 53.500351 ]
+    ]
+    ],
+    "centroid": [ -113.659702, 53.502329 ]
+    },
+    "type": "fence",
+    "bearing": 181,
+    "Seq": 64443,
+    "loc": "AB QA Henday South Lessard SB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf0d",
+    "id": 6728,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.66704, 53.477652 ],
+    [ -113.666825, 53.479159 ],
+    [ -113.663049, 53.479746 ],
+    [ -113.662748, 53.477984 ],
+    [ -113.66704, 53.477652 ]
+    ]
+    ],
+    "centroid": [ -113.664916, 53.478635 ]
+    },
+    "type": "fence",
+    "bearing": 254,
+    "Seq": 64445,
+    "loc": "AB QA Henday South Lessard SB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf0e",
+    "id": 6729,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.655109, 53.474663 ],
+    [ -113.657084, 53.476502 ],
+    [ -113.655925, 53.477115 ],
+    [ -113.654594, 53.475328 ],
+    [ -113.655109, 53.474663 ]
+    ]
+    ],
+    "centroid": [ -113.655678, 53.475902 ]
+    },
+    "type": "fence",
+    "bearing": 148,
+    "Seq": 64446,
+    "loc": "AB QA Henday South Lessard SB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf0f",
+    "id": 6730,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.658886, 53.479312 ],
+    [ -113.660131, 53.48207 ],
+    [ -113.658714, 53.482555 ],
+    [ -113.657556, 53.479925 ],
+    [ -113.658886, 53.479312 ]
+    ]
+    ],
+    "centroid": [ -113.658822, 53.480966 ]
+    },
+    "type": "fence",
+    "bearing": 167,
+    "Seq": 64447,
+    "loc": "AB QA Henday South Lessard SB",
+    "status": 1,
+    "st": 2
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf10",
+    "id": 6731,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.644767, 53.469248 ],
+    [ -113.65202, 53.472441 ],
+    [ -113.650517, 53.473463 ],
+    [ -113.643394, 53.470321 ],
+    [ -113.644767, 53.469248 ]
+    ]
+    ],
+    "centroid": [ -113.647674, 53.471368 ]
+    },
+    "type": "fence",
+    "bearing": 126,
+    "Seq": 64448,
+    "loc": "AB QA Henday South Terwillegar SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf11",
+    "id": 6732,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.622708, 53.462478 ],
+    [ -113.636227, 53.466719 ],
+    [ -113.634853, 53.468022 ],
+    [ -113.620048, 53.46327 ],
+    [ -113.622708, 53.462478 ]
+    ]
+    ],
+    "centroid": [ -113.628459, 53.465122 ]
+    },
+    "type": "fence",
+    "bearing": 118,
+    "Seq": 64449,
+    "loc": "AB QA Henday South Terwillegar SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf12",
+    "id": 6733,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.59992, 53.4428 ],
+    [ -113.602409, 53.445995 ],
+    [ -113.601379, 53.446481 ],
+    [ -113.598933, 53.443235 ],
+    [ -113.59992, 53.4428 ]
+    ]
+    ],
+    "centroid": [ -113.60066, 53.444628 ]
+    },
+    "type": "fence",
+    "bearing": 158,
+    "Seq": 64450,
+    "loc": "AB QA Henday South Terwillegar SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf13",
+    "id": 6734,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.605027, 53.449446 ],
+    [ -113.608332, 53.453356 ],
+    [ -113.607473, 53.454301 ],
+    [ -113.603954, 53.450008 ],
+    [ -113.605027, 53.449446 ]
+    ]
+    ],
+    "centroid": [ -113.606196, 53.451778 ]
+    },
+    "type": "fence",
+    "bearing": 153,
+    "Seq": 64451,
+    "loc": "AB QA Henday South Terwillegar SB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "5806806ef50088495b48da07",
+    "id": 7368,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W3",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.658736, 53.513699 ],
+    [ -113.659809, 53.513738 ],
+    [ -113.659809, 53.51805 ],
+    [ -113.658628, 53.518038 ],
+    [ -113.658736, 53.513699 ]
+    ]
+    ],
+    "centroid": [ -113.659245, 53.515881 ]
+    },
+    "type": "fence",
+    "bearing": 1,
+    "Seq": 64470,
+    "loc": "AB QA Henday West 100Ave NB",
+    "status": 1,
+    "st": 0
+    },
+    {
+    "_id": "580688a2f50088495b48da14",
+    "id": 7369,
+    "thirdPartyPrograms": [ "NORPASS" ],
+    "fenceType": "W3",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.55297, 53.48253 ],
+    [ -113.55297, 53.482875 ],
+    [ -113.546823, 53.482927 ],
+    [ -113.546061, 53.482556 ],
+    [ -113.55297, 53.48253 ]
+    ]
+    ],
+    "centroid": [ -113.549706, 53.482722 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64515,
+    "loc": "AB QA Whitemud-2 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf04",
+    "id": 4705,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.488998, 53.48381 ],
+    [ -113.489403, 53.483822 ],
+    [ -113.489403, 53.484001 ],
+    [ -113.488998, 53.484001 ],
+    [ -113.488998, 53.48381 ]
+    ]
+    ],
+    "centroid": [ -113.4892, 53.483909 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 64410,
+    "loc": "AB QA 101-St NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc35",
+    "id": 4706,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.48938, 53.484158 ],
+    [ -113.489388, 53.484341 ],
+    [ -113.489014, 53.484344 ],
+    [ -113.489021, 53.484158 ],
+    [ -113.48938, 53.484158 ]
+    ]
+    ],
+    "centroid": [ -113.489201, 53.48425 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 64411,
+    "loc": "AB QA 101-St NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc36",
+    "id": 4707,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.489098, 53.485126 ],
+    [ -113.48938, 53.485134 ],
+    [ -113.489388, 53.485611 ],
+    [ -113.489082, 53.485615 ],
+    [ -113.489098, 53.485126 ]
+    ]
+    ],
+    "centroid": [ -113.489237, 53.485371 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 64412,
+    "loc": "AB QA 101-St NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc37",
+    "id": 4708,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.489082, 53.484516 ],
+    [ -113.489082, 53.484894 ],
+    [ -113.488747, 53.484901 ],
+    [ -113.488747, 53.484516 ],
+    [ -113.489082, 53.484516 ]
+    ]
+    ],
+    "centroid": [ -113.488914, 53.484707 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 64413,
+    "loc": "AB QA 101-St NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf05",
+    "id": 4713,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.49157, 53.45547 ],
+    [ -113.492629, 53.455513 ],
+    [ -113.492672, 53.46078 ],
+    [ -113.491631, 53.460501 ],
+    [ -113.49157, 53.45547 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.492125, 53.458066 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 65360,
+    "loc": "AB QA Calgary-Trail NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf06",
+    "id": 4714,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "B",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.491542, 53.464369 ],
+    [ -113.492522, 53.464382 ],
+    [ -113.492554, 53.47103 ],
+    [ -113.491571, 53.47091 ],
+    [ -113.491542, 53.464369 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.492047, 53.467673 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 65361,
+    "loc": "AB QA Calgary-Trail NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf07",
+    "id": 4715,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C2",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.491905, 53.474155 ],
+    [ -113.492274, 53.474163 ],
+    [ -113.492307, 53.476428 ],
+    [ -113.49189, 53.476406 ],
+    [ -113.491905, 53.474155 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.492094, 53.475288 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 65362,
+    "loc": "AB QA Calgary-Trail NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf08",
+    "id": 4716,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C1",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.491524, 53.473866 ],
+    [ -113.491768, 53.473888 ],
+    [ -113.491776, 53.475693 ],
+    [ -113.491531, 53.475685 ],
+    [ -113.491524, 53.473866 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.49165, 53.474783 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 65363,
+    "loc": "AB QA Calgary-Trail NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc51",
+    "id": 4721,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.487389, 53.4804 ],
+    [ -113.487381, 53.480625 ],
+    [ -113.483589, 53.480694 ],
+    [ -113.483574, 53.480492 ],
+    [ -113.487389, 53.4804 ]
+    ]
+    ],
+    "centroid": [ -113.485483, 53.480553 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64506,
+    "loc": "AB QA Whitemud-1 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc52",
+    "id": 4722,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.485596, 53.480694 ],
+    [ -113.485619, 53.480976 ],
+    [ -113.482094, 53.481007 ],
+    [ -113.482086, 53.480816 ],
+    [ -113.485596, 53.480694 ]
+    ]
+    ],
+    "centroid": [ -113.483849, 53.480873 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64507,
+    "loc": "AB QA Whitemud-1 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc53",
+    "id": 4723,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.478951, 53.480865 ],
+    [ -113.479088, 53.481171 ],
+    [ -113.464508, 53.48354 ],
+    [ -113.464317, 53.483253 ],
+    [ -113.478951, 53.480865 ]
+    ]
+    ],
+    "centroid": [ -113.471716, 53.482207 ]
+    },
+    "type": "fence",
+    "bearing": 260,
+    "Seq": 64508,
+    "loc": "AB QA Whitemud-1 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc54",
+    "id": 4724,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.45282, 53.4846 ],
+    [ -113.453156, 53.485497 ],
+    [ -113.443695, 53.485893 ],
+    [ -113.443489, 53.484882 ],
+    [ -113.45282, 53.4846 ]
+    ]
+    ],
+    "centroid": [ -113.44829, 53.485218 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64509,
+    "loc": "AB QA Whitemud-1 WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc38",
+    "id": 4738,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.449776, 53.488461 ],
+    [ -113.450562, 53.489017 ],
+    [ -113.446663, 53.491409 ],
+    [ -113.445869, 53.491005 ],
+    [ -113.449776, 53.488461 ]
+    ]
+    ],
+    "centroid": [ -113.448217, 53.489973 ]
+    },
+    "type": "fence",
+    "bearing": 220,
+    "Seq": 64414,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc39",
+    "id": 4739,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.443459, 53.489422 ],
+    [ -113.44603, 53.489498 ],
+    [ -113.445724, 53.490025 ],
+    [ -113.443367, 53.489899 ],
+    [ -113.443459, 53.489422 ]
+    ]
+    ],
+    "centroid": [ -113.444645, 53.489711 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64415,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc3a",
+    "id": 4740,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.445862, 53.489662 ],
+    [ -113.447113, 53.490276 ],
+    [ -113.446716, 53.490551 ],
+    [ -113.44545, 53.489918 ],
+    [ -113.445862, 53.489662 ]
+    ]
+    ],
+    "centroid": [ -113.446285, 53.490102 ]
+    },
+    "type": "fence",
+    "bearing": 310,
+    "Seq": 64416,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc3b",
+    "id": 4741,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.44722, 53.490295 ],
+    [ -113.447792, 53.490543 ],
+    [ -113.447266, 53.490742 ],
+    [ -113.446693, 53.490578 ],
+    [ -113.44722, 53.490295 ]
+    ]
+    ],
+    "centroid": [ -113.447243, 53.49054 ]
+    },
+    "type": "fence",
+    "bearing": 185,
+    "Seq": 64417,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc3c",
+    "id": 4742,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.46981, 53.487736 ],
+    [ -113.469887, 53.488625 ],
+    [ -113.457291, 53.488544 ],
+    [ -113.457352, 53.487808 ],
+    [ -113.46981, 53.487736 ]
+    ]
+    ],
+    "centroid": [ -113.463585, 53.488178 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64418,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc3d",
+    "id": 4743,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.466209, 53.484825 ],
+    [ -113.467384, 53.484848 ],
+    [ -113.467964, 53.488045 ],
+    [ -113.466484, 53.487984 ],
+    [ -113.466209, 53.484825 ]
+    ]
+    ],
+    "centroid": [ -113.46701, 53.486425 ]
+    },
+    "type": "fence",
+    "bearing": 0,
+    "Seq": 64419,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc3e",
+    "id": 4744,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.466621, 53.487774 ],
+    [ -113.467834, 53.487778 ],
+    [ -113.468079, 53.488441 ],
+    [ -113.467125, 53.488319 ],
+    [ -113.466621, 53.487774 ]
+    ]
+    ],
+    "centroid": [ -113.467415, 53.488078 ]
+    },
+    "type": "fence",
+    "bearing": 315,
+    "Seq": 64420,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc3f",
+    "id": 4745,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.479774, 53.487064 ],
+    [ -113.479752, 53.488323 ],
+    [ -113.479385, 53.488319 ],
+    [ -113.47937, 53.487091 ],
+    [ -113.479774, 53.487064 ]
+    ]
+    ],
+    "centroid": [ -113.47957, 53.487699 ]
+    },
+    "type": "fence",
+    "bearing": 180,
+    "Seq": 64421,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc40",
+    "id": 4746,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.478706, 53.487854 ],
+    [ -113.478905, 53.488049 ],
+    [ -113.477318, 53.488075 ],
+    [ -113.476234, 53.487991 ],
+    [ -113.478706, 53.487854 ]
+    ]
+    ],
+    "centroid": [ -113.477791, 53.487992 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64422,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc41",
+    "id": 4747,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.479393, 53.48772 ],
+    [ -113.479492, 53.487888 ],
+    [ -113.478882, 53.488049 ],
+    [ -113.478775, 53.487923 ],
+    [ -113.479393, 53.48772 ]
+    ]
+    ],
+    "centroid": [ -113.479135, 53.487895 ]
+    },
+    "type": "fence",
+    "bearing": 250,
+    "Seq": 64423,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc42",
+    "id": 4748,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.47731, 53.488091 ],
+    [ -113.478035, 53.488098 ],
+    [ -113.478065, 53.488319 ],
+    [ -113.476753, 53.488277 ],
+    [ -113.47731, 53.488091 ]
+    ]
+    ],
+    "centroid": [ -113.477541, 53.488196 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64424,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc43",
+    "id": 4749,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.479149, 53.488071 ],
+    [ -113.479156, 53.488297 ],
+    [ -113.477699, 53.4883 ],
+    [ -113.477699, 53.488083 ],
+    [ -113.479149, 53.488071 ]
+    ]
+    ],
+    "centroid": [ -113.478426, 53.488188 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64425,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc44",
+    "id": 4750,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.479988, 53.488014 ],
+    [ -113.480003, 53.488323 ],
+    [ -113.478905, 53.488331 ],
+    [ -113.478905, 53.488045 ],
+    [ -113.479988, 53.488014 ]
+    ]
+    ],
+    "centroid": [ -113.47945, 53.488178 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64426,
+    "loc": "AB QA 51-Ave WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc4d",
+    "id": 4763,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.489502, 53.48354 ],
+    [ -113.489502, 53.483692 ],
+    [ -113.489349, 53.483692 ],
+    [ -113.489357, 53.48354 ],
+    [ -113.489502, 53.48354 ]
+    ]
+    ],
+    "centroid": [ -113.489427, 53.483616 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64484,
+    "loc": "AB QA IIS-Parking-Lot WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc4e",
+    "id": 4764,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.489594, 53.483536 ],
+    [ -113.489891, 53.48354 ],
+    [ -113.489899, 53.483704 ],
+    [ -113.489601, 53.483692 ],
+    [ -113.489594, 53.483536 ]
+    ]
+    ],
+    "centroid": [ -113.489746, 53.483618 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64485,
+    "loc": "AB QA IIS-Parking-Lot WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc4f",
+    "id": 4765,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.490036, 53.483501 ],
+    [ -113.490303, 53.483509 ],
+    [ -113.490311, 53.483707 ],
+    [ -113.490036, 53.483704 ],
+    [ -113.490036, 53.483501 ]
+    ]
+    ],
+    "centroid": [ -113.490172, 53.483605 ]
+    },
+    "type": "fence",
+    "bearing": 270,
+    "Seq": 64486,
+    "loc": "AB QA IIS-Parking-Lot WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8bd8e6e25432a6bc50",
+    "id": 4766,
+    "thirdPartyPrograms": [ ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.489311, 53.483334 ],
+    [ -113.489479, 53.483345 ],
+    [ -113.489487, 53.483521 ],
+    [ -113.489311, 53.483528 ],
+    [ -113.489311, 53.483334 ]
+    ]
+    ],
+    "centroid": [ -113.489397, 53.483432 ]
+    },
+    "type": "fence",
+    "bearing": 180,
+    "Seq": 64487,
+    "loc": "AB QA IIS-Parking-Lot WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8cd",
+    "id": 6735,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "AG-D",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.510056, 53.434588 ],
+    [ -113.510152, 53.434952 ],
+    [ -113.508124, 53.435099 ],
+    [ -113.50806, 53.43476 ],
+    [ -113.510056, 53.434588 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.509098, 53.43485 ]
+    },
+    "type": "fence",
+    "bearing": 83,
+    "Seq": 62167,
+    "loc": "FL-Ag QA Henday East 111St EB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2e8dd8e6e25432a6bf09",
+    "id": 6736,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "D",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.49231, 53.478418 ],
+    [ -113.492267, 53.479574 ],
+    [ -113.491795, 53.479657 ],
+    [ -113.491859, 53.478533 ],
+    [ -113.49231, 53.478418 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.492058, 53.479045 ]
+    },
+    "type": "fence",
+    "bearing": 359,
+    "Seq": 65364,
+    "loc": "AB QA Calgary-Trail NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57ed2d9dd8e6e25432a6b8ce",
+    "id": 6737,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "W2",
+    "location": {
+    "coordinates": [
+    [
+    [ -113.492385, 53.464688 ],
+    [ -113.492375, 53.467135 ],
+    [ -113.491773, 53.467061 ],
+    [ -113.491688, 53.4647 ],
+    [ -113.492385, 53.464688 ]
+    ]
+    ],
+    "type": "Polygon",
+    "centroid": [ -113.492055, 53.465896 ]
+    },
+    "type": "fence",
+    "bearing": 1,
+    "Seq": 65365,
+    "loc": "AB QA Calgary-Trail NB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57fe92bea1ff3958f16bf61a",
+    "id": 7362,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.492378, 53.501232 ],
+    [ -113.492432, 53.501434 ],
+    [ -113.492131, 53.501557 ],
+    [ -113.492088, 53.501255 ],
+    [ -113.492378, 53.501232 ]
+    ]
+    ],
+    "centroid": [ -113.492257, 53.501369 ]
+    },
+    "type": "fence",
+    "bearing": 351,
+    "Seq": 64488,
+    "loc": "AB QA Office Track WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57fe92bea1ff3958f16bf61b",
+    "id": 7363,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "A",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.492329, 53.500912 ],
+    [ -113.492396, 53.501239 ],
+    [ -113.492068, 53.501281 ],
+    [ -113.492039, 53.500914 ],
+    [ -113.492329, 53.500912 ]
+    ]
+    ],
+    "centroid": [ -113.492208, 53.501086 ]
+    },
+    "type": "fence",
+    "bearing": 354,
+    "Seq": 64489,
+    "loc": "AB QA Office Track WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57fe92bea1ff3958f16bf61c",
+    "id": 7364,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "B",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.492897, 53.501408 ],
+    [ -113.492889, 53.501568 ],
+    [ -113.492355, 53.501564 ],
+    [ -113.492462, 53.501427 ],
+    [ -113.492897, 53.501408 ]
+    ]
+    ],
+    "centroid": [ -113.492651, 53.501492 ]
+    },
+    "type": "fence",
+    "bearing": 264,
+    "Seq": 64490,
+    "loc": "AB QA Office Track WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57fe92bea1ff3958f16bf61d",
+    "id": 7365,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C1",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.493782, 53.501606 ],
+    [ -113.493782, 53.501705 ],
+    [ -113.493011, 53.501701 ],
+    [ -113.493134, 53.50161 ],
+    [ -113.493782, 53.501606 ]
+    ]
+    ],
+    "centroid": [ -113.493427, 53.501655 ]
+    },
+    "type": "fence",
+    "bearing": 269,
+    "Seq": 64491,
+    "loc": "AB QA Office Track WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57fe92bea1ff3958f16bf61e",
+    "id": 7366,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "C2",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.493782, 53.501385 ],
+    [ -113.49379, 53.501556 ],
+    [ -113.493134, 53.501549 ],
+    [ -113.493019, 53.501408 ],
+    [ -113.493782, 53.501385 ]
+    ]
+    ],
+    "centroid": [ -113.493431, 53.501474 ]
+    },
+    "type": "fence",
+    "bearing": 271,
+    "Seq": 64492,
+    "loc": "AB QA Office Track WB",
+    "status": 1,
+    "st": 1
+    },
+    {
+    "_id": "57fe92bea1ff3958f16bf61f",
+    "id": 7367,
+    "thirdPartyPrograms": [ "PrePass" ],
+    "fenceType": "D",
+    "location": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+    [ -113.494316, 53.501216 ],
+    [ -113.494343, 53.501796 ],
+    [ -113.493877, 53.501776 ],
+    [ -113.493866, 53.501277 ],
+    [ -113.494316, 53.501216 ]
+    ]
+    ],
+    "centroid": [ -113.494101, 53.501516 ]
+    },
+    "type": "fence",
+    "bearing": 274,
+    "Seq": 64493,
+    "loc": "AB QA Office Track WB",
+    "status": 1,
+    "st": 1
+    }
