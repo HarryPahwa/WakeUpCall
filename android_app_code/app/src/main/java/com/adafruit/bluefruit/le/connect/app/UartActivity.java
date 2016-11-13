@@ -44,6 +44,7 @@ import com.drivewyze.GPXLocationProvider;
 import com.drivewyze.JDRIVE;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -59,12 +60,11 @@ import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
-import static android.R.attr.delay;
-import static android.webkit.ConsoleMessage.MessageLevel.LOG;
+import static android.webkit.WebSettings.PluginState.ON;
 import static com.adafruit.bluefruit.le.connect.R.id.BTLEText;
-import static com.adafruit.bluefruit.le.connect.R.id.sendButton;
-
+import java.util.Random;
 //import android.location.LocationManager;
 
 //import org.json.JSONObject;
@@ -119,7 +119,7 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         }
     };
     private boolean isUITimerRunning = false;
-
+    int sleepyZoneCount=0;
     // Data
     private boolean mShowDataInHexFormat;
     private boolean mIsTimestampDisplayMode;
@@ -344,18 +344,87 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
             public void onLocationChanged(Location location) {
                 // Called when a new location is found by the network location provider.
 //                makeUseOfNewLocation(location);
-                Button sendButton=(Button) findViewById(R.id.sendButton);
-                sendButton.performClick();
+                uartSendData("1", false);
                 mBufferTextView.setText("");
-                try{
+                try {
                     Thread.sleep(100);
-                }catch(Exception e){
-                    Log.e(TAG,"LOLZ");
+                } catch (Exception e) {
+                    Log.e(TAG, "LOLZ");
                 }
                 String text = mBufferTextView.getText().toString();
-                int sleepStatus=Integer.parseInt(text);
+                int sleepStatus = 1;//Integer.parseInt(text);
                 latLonSleepList.add(new LatLonSleep(location.getLatitude(), location.getLongitude(), sleepStatus));
-                BTLETextView.setText(Double.toString(location.getLatitude())+", "+Double.toString(location.getLongitude()));
+                BTLETextView.setText(Double.toString(location.getLatitude()) + ", " + Double.toString(location.getLongitude()));
+                for (LatLonSleep item : latLonSleepList) {
+                    Log.v(TAG, item.getLat() + ", " + item.getLon() + ", " + item.getStatus());
+                }
+                int n = 8, count = 0;
+                if (latLonSleepList.size() > n) {
+                    for (LatLonSleep i : latLonSleepList.subList(Math.max(latLonSleepList.size() - n, 0), latLonSleepList.size())) {
+                        if (i.getStatus() == 1)
+                            count = count + 1;
+                    }
+                }
+
+                if (count > 4) {
+                    ///{
+//                    "_id": "57ed2e8bd8e6e25432a6bc32",
+//                            "id": 4752,
+//                            "thirdPartyPrograms": [ ],
+//                    "fenceType": "B",
+//                            "location": {
+//                        "type": "Polygon",
+//                                "coordinates": [
+//                        [
+//                        [ -113.562332, 53.239616 ],
+//                        [ -113.565323, 53.239933 ],
+//                        [ -113.562248, 53.248684 ],
+//                        [ -113.560944, 53.248566 ],
+//                        [ -113.562332, 53.239616 ]
+//                        ]
+//                        ]
+//                    },
+//                    "type": "fence",
+//                            "bearing": 180,
+//                            "Seq": 64407,
+//                            "loc": "AB Leduc Hwy-2 SB",
+//                            "status": 1,
+//                            "st": 1
+//                }
+//                }
+
+                    JSONObject obj=new JSONObject();
+                    obj.put("_id", UUID.randomUUID().toString());
+                    obj.put("id",String.format("%04d", new Random(System.currentTimeMillis()).nextInt(10000)));
+                    JSONArray arr=new JSONArray();
+                    obj.put("thirdPartyPrograms",arr);
+                    obj.put("fencetype","B");
+                    JSONObject loc=new JSONObject();
+                    loc.put("type","Polygon");
+                    JSONArray coord=new JSONArray();
+                    JSONArray coord2=new JSONArray();
+                    JSONArray coord3=new JSONArray();
+                    for(int i=1;i<=4;i++){
+                        int size=latLonSleepList.size();
+
+                        coord3.add(latLonSleepList.get(size-i).getLon());
+                        coord3.add(latLonSleepList.get(size-i).getLat());
+                        coord2.add(coord3);
+                        coord3=new JSONArray();
+                    }
+
+                    coord.add(coord2);
+                    loc.put("coordinates",coord);
+                    obj.put("location",loc);
+                    obj.put("type","fence");
+                    obj.put("bearing",500);
+                    obj.put("Seq",50000);
+                    obj.put("loc","Sleepy Zone"+Integer.toString(sleepyZoneCount));
+                    sleepyZoneCount=sleepyZoneCount+1;
+                    obj.put("status",1);
+                    obj.put("st",1);
+                    Log.v(TAG,"obj"+obj);
+                }
             }
 
             public void onStatusChanged(String provider, int status, Bundle extras) {}
