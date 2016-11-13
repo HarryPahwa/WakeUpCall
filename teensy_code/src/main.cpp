@@ -4,16 +4,17 @@
 #include "Adafruit_BluefruitLE_SPI.h"
 #include "BluefruitConfig.h"
 
-Adafruit_BluefruitLE_SPI ble(BLUEFRUIT_SPI_CS, BLUEFRUIT_SPI_IRQ, BLUEFRUIT_SPI_RST);
+#define LEFT_TX 3
+#define RIGHT_TX 4
+#define LEFT_RX 23
+#define RIGHT_RX 22
 
-int level=65;
-char buf[200];
+Adafruit_BluefruitLE_SPI ble(BLUEFRUIT_SPI_CS, BLUEFRUIT_SPI_IRQ, BLUEFRUIT_SPI_RST);
 
 void setup(){
   pinMode(LED_BUILTIN,OUTPUT);
   digitalWrite(LED_BUILTIN,HIGH);
   Serial.begin(9600);
-  while(!Serial);
   if ( !ble.begin(VERBOSE_MODE) )
   {
     Serial.println("Couldn't find Bluefruit, make sure it's in CoMmanD mode & check wiring?");
@@ -25,12 +26,15 @@ void setup(){
   }
   Serial.print("Is in data mode?");
   Serial.println(ble.setMode(BLUEFRUIT_MODE_DATA));
-  pinMode(3, OUTPUT);
+  pinMode(RIGHT_TX, OUTPUT);
+  pinMode(LEFT_TX, OUTPUT);
   pinMode(A14,OUTPUT);
-  pinMode(23, INPUT);
+  pinMode(LEFT_RX, INPUT);
+  pinMode(RIGHT_RX, INPUT);
   analogWriteFrequency(3,38000);
-  analogWrite(3,128);
-  analogWrite(A14,5);
+  analogWrite(LEFT_TX,128);
+  analogWrite(RIGHT_TX,128);
+  analogWrite(A14,110);
 
 }
 
@@ -39,21 +43,20 @@ void loop(){
   ble.write(level);
   level;
   delay(1000);*/
-  while(1){
-
-    Serial.println(analogRead(23));
-    Serial.print("ADC val ");
-    delay(1000);
+  if(ble.available()){
+    ble.read();
+    ble.write(analogRead(23)/4);
+    delay(100);
   }
   /*delay(100);
-  while(analogRead(23)>200 && level < 255){
+  while(analogRead(23)>800 && level < 255){
     analogWrite(A14,level);
     level++;
     delay(10);
   }
-  analogWrite(3,0);
-  Serial1.print("Final Value ");
-  Serial1.println(level);
+  analogWrite(A14,0);
+  Serial.print("Final Value ");
+  Serial.println(level);*/
   //Serial1.print("Analog value ");
   //Serial1.println(analogRead(23));*/
 }
