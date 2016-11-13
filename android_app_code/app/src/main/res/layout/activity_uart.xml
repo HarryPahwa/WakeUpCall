@@ -8,18 +8,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:backgroundTint="@color/common_google_signin_btn_text_light_focused"
+
     tools:context="com.adafruit.bluefruit.le.connect.app.UartActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
 
 
 
 
         <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
         android:orientation="vertical">
         <!--
           android:layout_below="@id/headerLayout"
@@ -27,16 +32,14 @@
           !-->
         <ListView
             android:id="@+id/bufferListView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1.84"
             android:background="#cccccc" />
 
         <EditText
             android:id="@+id/bufferTextView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:background="#cccccc"
             android:cursorVisible="false"
             android:gravity="top"
@@ -82,17 +85,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
 
-
+            <TextView
+                android:id="@+id/eyeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Check Status"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:background="@android:color/holo_orange_light"
+                />
 
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
                 android:onClick="sendTrigger"
-                android:text="@string/uart_send" />
+                android:text="Check Eye"
+                android:background="@android:color/holo_green_light"/>
 
 
             <LinearLayout
@@ -165,7 +178,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginStart="35dp"
             android:id="@+id/BTLEButton"
-            android:onClick="BTLECheck" />
+            android:onClick="idk" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -195,6 +208,7 @@
             android:layout_below="@+id/textView2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
     </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -1489,9 +1489,12 @@ public class MainActivity extends AppCompatActivity implements BleManager.BleMan
         }
 
         private ArrayList<BluetoothDeviceData> calculateFilteredPeripherals() {
+            ArrayList<BluetoothDeviceData> peripherals=new ArrayList<BluetoothDeviceData>();
+            try {
+                 peripherals = (ArrayList<BluetoothDeviceData>) mScannedDevices.clone();
+            } catch(Exception e){
 
-            ArrayList<BluetoothDeviceData> peripherals = (ArrayList<BluetoothDeviceData>) mScannedDevices.clone();
-
+            }
             // Sort devices alphabetically
             Collections.sort(peripherals, new Comparator<BluetoothDeviceData>() {
                 @Override

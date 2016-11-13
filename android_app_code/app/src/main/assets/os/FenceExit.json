@@ -1,5 +1,6 @@
 {
     "id": "dwlisp-fenceExit",
+    "_id": "dwlisp-fenceExit",
     "ffun": "((eq argv.eventType 'fence-exit'))",
     "type": "dwlisp",
     "script": "((LOCAL 'fe' (ARGS)) (LOCAL 'uiEvt' (DICT 'action' 'show' 'eventType' 'UI' 'priority' 100 'loc' fe.fence.loc 'name' 'SCR-FENCE-EXIT' 'proto' 'SCR-FENCE-EXIT' 'minDuration' 25 'maxDuration' 30)) (EMIT uiEvt))"

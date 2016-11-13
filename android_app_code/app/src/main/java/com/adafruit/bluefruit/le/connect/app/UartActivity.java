@@ -62,6 +62,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import static android.R.attr.id;
 import static android.webkit.WebSettings.PluginState.ON;
 import static com.adafruit.bluefruit.le.connect.R.id.BTLEText;
 import java.util.Random;
@@ -337,6 +338,10 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
 
         ////////////////LOCATION
 
+
+    }
+
+    public void idk(View view){
         // Define a listener that responds to location updates
         LocationManager locationManager = (LocationManager) this
                 .getSystemService(Context.LOCATION_SERVICE);
@@ -345,18 +350,19 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
                 // Called when a new location is found by the network location provider.
 //                makeUseOfNewLocation(location);
                 uartSendData("1", false);
-                mBufferTextView.setText("");
                 try {
                     Thread.sleep(100);
                 } catch (Exception e) {
                     Log.e(TAG, "LOLZ");
                 }
                 String text = mBufferTextView.getText().toString();
+                //Log.v(TAG,text);
                 int sleepStatus = 1;//Integer.parseInt(text);
+                mBufferListView.setAdapter(null);
                 latLonSleepList.add(new LatLonSleep(location.getLatitude(), location.getLongitude(), sleepStatus));
                 BTLETextView.setText(Double.toString(location.getLatitude()) + ", " + Double.toString(location.getLongitude()));
                 for (LatLonSleep item : latLonSleepList) {
-                    Log.v(TAG, item.getLat() + ", " + item.getLon() + ", " + item.getStatus());
+                    //Log.v(TAG, item.getLat() + ", " + item.getLon() + ", " + item.getStatus());
                 }
                 int n = 8, count = 0;
                 if (latLonSleepList.size() > n) {
@@ -437,7 +443,6 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
 // Register the listener with the Location Manager to receive location updates
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
     }
-
     @Override
     public void onResume() {
         super.onResume();
@@ -499,6 +504,14 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
 //        mSendEditText.setText("");       // Clear editText
         String data="1";
         uartSendData(data, false);
+        String text = mBufferTextView.getText().toString();
+        TextView eyeStatus=(TextView)findViewById(R.id.eyeStatus);
+        if(text=="1"){
+            eyeStatus.setText("Eye is open");
+        }
+        else{
+            eyeStatus.setText("Eye is closed");
+        }
     }
 
     private void uartSendData(String data, boolean wasReceivedFromMqtt) {
@@ -1095,7 +1108,7 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
                     payload.append(',');
             }
             Log.v(TAG, "sending OSU");
-            //JDRIVE.instance().osu(payload.toString(), ts);
+           JDRIVE.instance().osu(payload.toString(), ts);
         } catch (Exception ex) {
         }
     }
