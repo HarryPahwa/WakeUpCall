@@ -9,10 +9,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.location.Location;
-
-import android.location.Location;
 import android.location.LocationListener;
-import android.location.LocationManager;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
@@ -61,8 +58,12 @@ import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import static android.R.attr.delay;
+import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 import static com.adafruit.bluefruit.le.connect.R.id.BTLEText;
+import static com.adafruit.bluefruit.le.connect.R.id.sendButton;
 
 //import android.location.LocationManager;
 
@@ -139,6 +140,33 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
     /////LOCATION
 
     private LocationManager locationManager;
+
+
+    public class LatLonSleep {
+        double lat;
+        double lon;
+        int sleepStatus;
+
+        public LatLonSleep(double lat, double lon,int status) {
+            this.lat = lat;
+            this.lon = lon;
+            this.sleepStatus=status;
+        }
+
+        public double getLat(){
+            return this.lat;
+        }
+
+        public double getLon(){
+            return this.lon;
+        }
+
+        public int getStatus(){
+            return this.sleepStatus;
+        }
+    }
+
+    final List<LatLonSleep> latLonSleepList = new ArrayList<LatLonSleep>();
 ///////////////DRIVE
     public String getUIName(String evt) {
         try {
@@ -261,7 +289,7 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
 //            @Override
 //            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
 //                if (actionId == EditorInfo.IME_ACTION_SEND) {
-//                    onClickSend(null);
+//                    sendTrigger(null);
 //                    return true;
 //                }
 //
@@ -316,7 +344,17 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
             public void onLocationChanged(Location location) {
                 // Called when a new location is found by the network location provider.
 //                makeUseOfNewLocation(location);
-
+                Button sendButton=(Button) findViewById(R.id.sendButton);
+                sendButton.performClick();
+                mBufferTextView.setText("");
+                try{
+                    Thread.sleep(100);
+                }catch(Exception e){
+                    Log.e(TAG,"LOLZ");
+                }
+                String text = mBufferTextView.getText().toString();
+                int sleepStatus=Integer.parseInt(text);
+                latLonSleepList.add(new LatLonSleep(location.getLatitude(), location.getLongitude(), sleepStatus));
                 BTLETextView.setText(Double.toString(location.getLatitude())+", "+Double.toString(location.getLongitude()));
             }
 
@@ -387,7 +425,7 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    public void onClickSend(View view) {
+    public void sendTrigger(View view) {
 //        String data = mSendEditText.getText().toString();
 //        mSendEditText.setText("");       // Clear editText
         String data="1";

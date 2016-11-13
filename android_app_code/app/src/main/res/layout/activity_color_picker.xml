@@ -73,7 +73,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:onClick="onClickSend"
+                    android:onClick="sendTrigger"
                     android:text="@string/colorpicker_send" />
             </LinearLayout>
         </LinearLayout>
